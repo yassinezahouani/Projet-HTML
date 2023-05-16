@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="https://www.freeiconspng.com/uploads/blue-lion-head-png-14.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBT-add user or login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            position: relative;
+            margin: 0;
+            background-image: url("https://img.freepik.com/premium-photo/professional-developer-programmer-working-software-website-design-coding-technology-writing-codes-database-company-office-global-cyber-connection-technology_122498-189.jpg");
+            backdrop-filter: blur(4px);
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow: hidden;
+            height:100vh;
+        }
+
+        #div0 {
+          position: absolute;
+          background-image: linear-gradient(rgba(250,250,250, 0.6),
+            rgb(96, 247, 181)),url("https://pbs.twimg.com/media/E2z6WrjWUAEconS.png");
+            
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 300px;
+            border-radius: 50px;
+            margin-left: 600px;
+            margin-top: 150px;
+            padding: 35px;
+            box-shadow: 2px 6px 9px rgba(0, 0, 0, 0.3);
+            margin-bottom: 500px;}
+
+            #div2 {
+          position: absolute;
+          background-image: linear-gradient(rgba(250,250,250, 0.6),
+            rgb(96, 247, 181)),url("https://pbs.twimg.com/media/E2z6WrjWUAEconS.png");
+            border: 1px solid rgb(172, 242, 218);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+            width: 300px;
+            border-radius: 50px;
+            margin-left: 1000px;
+            margin-top: 150px;
+            margin-bottom: 500px;
+           height: 475px;
+            padding: 35px;
+            box-shadow: 2px 6px 9px rgba(0, 0, 0, 0.3);
+          }
+           
+       h1{
+        color:rgb(255, 255, 255);
+        font-size: 30px;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-decoration: underline;
+        text-shadow:  2px 2px #000000;
+       }
+
+        input[type=text], input[type=password]  {
+            margin-top: 40px;
+            margin-bottom: 5px;
+            display: block;
+            font-family: inherit;
+            width: 80%;
+           outline: none;
+           background-color: #ffffff;
+           border-radius: 4px;
+          border: none;
+           display: block;
+           padding: 0.9rem 0.7rem;
+           box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+           font-size: 17px;
+           color: #000000;
+           text-indent: 4px;}
+
+           input[type=checkbox]{
+            width: 20%;
+            
+           }
+
+
+
+        p {
+          text-align: center;
+          font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          line-height: 30px;
+          color:rgb(255, 255, 255);
+          font-weight: 600;
+          font-size: 25px;
+          margin-top: 15px;
+          margin-bottom: 5px;
+          display: block;
+          font-weight: bold;
+          width: 100%;
+          text-decoration: underline;
+         
+        }
+
+        input[type=checkbox] {
+            display: inline;
+            cursor: pointer;
+        }
+
+        #s1, #s2 {
+            color: red;
+        }
+
+        .box {
+  width: 170px;
+  height: 55px;
+  float: left;
+  transition: .5s linear;
+  position: relative;
+  box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.26);
+  overflow: hidden;
+  padding: 15px;
+  font-size: 20px;
+  text-align: center;
+  margin: 0 40px;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.box:before {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  border-bottom: 4px solid transparent;
+  border-left: 4px solid transparent;
+  box-sizing: border-box;
+  transform: translateX(100%);
+}
+
+.box:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-top: 4px solid transparent;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  transform: translateX(-100%);
+}
+
+.box:hover {
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.5);
+}
+
+.box:hover:before {
+  border-color: #ffffff;
+  height: 100%;
+  transform: translateX(0);
+  transition: .2s transform linear, .3s height linear .3s;
+}
+
+.box:hover:after {
+  border-color: #ffffff;
+  height: 100%;
+  transform: translateX(0);
+  transition: .2s transform linear, .3s height linear .5s;
+}
+
+button {
+  color: rgb(255, 255, 255);
+  border: none;
+}
+img{
+  position: absolute;
+  top: 150px;
+  left: 100px;
+  filter: brightness(4.4) ;
+  height: 300px;
+  width: 300px;
+  
+  }
+  
+
+  #div3{
+    position:absolute ;
+    left: 100px;
+    top: 420px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 40px;
+}
+.waviy {
+  position: relative;
+}
+.waviy span {
+  position: relative;
+  display: inline-block;
+  font-size: 100px;
+  color: #00e5ff;
+  animation: flip 3s infinite;
+  animation-delay: calc(.3s * var(--i))
+}
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg) 
+  }
+}
+
+
+    </style>
+</head>
+<body>
+
+  <img src="https://www.freeiconspng.com/uploads/blue-lion-head-png-14.png" alt="Logo" >
+    <div id="div0">
+       <p style="color: #fff;">if you don't have an account :</p>
+        <input type="text" id="in1" placeholder="Enter your name"><br>
+        <input type="password" id="in2" placeholder="Enter a password"><br>
+        <span id="s1"></span><br>
+       <button onclick="add()" class="box">Add User</button><br><br><br><br>
+       <p style="color: #fff;">after you click ADD USER go to login :</p>
+    </div>
+
+
+
+    <div id="div2">
+      <br>
+      <h1>Log In :</h1>
+      <form onsubmit="return login()" action="WEBT.html">
+          
+          <input type="text" id="in3" placeholder="Enter your name"><br>
+          
+          <input type="password" id="in4" placeholder="Enter your password"><br>
+          <span id="s2"></span><br>
+          <input type="checkbox" onclick="showPass()" style="height: 20px;"> SHOW PASSWORD <br><br>
+          <button class="box" type="submit" value="Login">LOGIN
+      </form>
+  </div>
+  
+  <div id="div3" class="waviy">
+    <span style="--i:1">w</span>
+    <span style="--i:2">e</span>
+    <span style="--i:3">b</span>
+    <span style="--i:4">T</span>
+    <span style="--i:5">.</span>
+  </div>
+ 
+
+    <script>
+        const users = [
+            { username: 'amine', password: 'amine123456' },
+            { username: 'yassine', password: 'yassine123456' }
+        ];
+
+        function add() {
+            const username = document.getElementById('in1').value;
+            const password = document.getElementById('in2').value;
+
+            if (password.length < 8) {
+                document.getElementById('s1').innerHTML = 'Password must be at least 8 characters';
+            } else {
+                const user = { username, password };
+                users.push(user);
+                console.log(users);
+            }
+        }
+
+        function show() {
+            const tbody = document.querySelector('#table1 tbody');
+            tbody.innerHTML = '';
+            
+            for (const user of users) {
+                const tr = document.createElement('tr');
+                const td1 = document.createElement('td');
+                td1.textContent = user.username;
+                tr.appendChild(td1);
+
+                const td2 = document.createElement('td');
+                td2.textContent = user.password;
+                tr.appendChild(td2);
+
+                tbody.appendChild(tr);
+            }
+        }
+
+        function login() {
+            const username = document.getElementById('in3').value;
+            const password = document.getElementById('in4').value;
+
+            for (const user of users) {
+                if (user.username === username && user.password === password) {
+                    document.getElementById('s2').innerHTML = `Welcome, ${username}!`;
+                    return true;
+                }
+            }
+
+            document.getElementById('s2').innerHTML = 'Invalid username or password';
+            return false;
+        }
+
+        function showPass() {
+            const passwordInput = document.getElementById('in4');
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+            } else {
+                passwordInput.type = 'password';
+            }
+        }
+    </script>
+</body>
+</html>
